@@ -1,0 +1,8 @@
+L.D	F0, 0(R1)
+MUL.D	F0, F0, F2
+L.D	F4, 0(R2)
+ADD.D	F0, F0, F4
+S.D	F0, 0(R2)
+DADDI	R1, R1, (-8)
+BNEZ	R1, loop
+DADDI	R2, R2, (-8)
