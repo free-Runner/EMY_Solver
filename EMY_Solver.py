@@ -85,7 +85,8 @@ def create_instructions(data):
     return i_list
 
 def display(i_list):
-    
+    print """			IF	ID	EX	MEM	CM
+==========================================================="""
     for instr in i_list:
         print instr.i,'\t',instr.IF,'\t',instr.ID,'\t',
 
